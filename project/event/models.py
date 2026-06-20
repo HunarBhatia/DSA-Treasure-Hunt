@@ -36,7 +36,7 @@ class Submission(models.Model):
     problem=models.ForeignKey(Problem, on_delete=models.CASCADE)
     submitted_answer = models.TextField()
     submitted_at = models.DateTimeField(auto_now_add=True)
-    iscorrect=models.BooleanField(default=False)
+    is_correct=models.BooleanField(default=False)
     
 class EventConfig(models.Model):
     started_at=models.DateTimeField()
